@@ -103,6 +103,7 @@ const writeApplicationsToCsv = async (filename: string, applications: any[]) => 
     const transpose = {}
 
     transpose['applicationId'] = data[i].id;
+    transpose['applicantAddress'] = data[i].applicantId;
 
     csvFields.data.forEach((data: any) => {
       const key = data.id.split('.')[1];

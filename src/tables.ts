@@ -51,6 +51,7 @@ const TABLES: {[key: string]: TableData} = {
           },
         ) {
           id
+          applicantId
           fields {
             id
             values {
